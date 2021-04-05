@@ -18,7 +18,7 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { updateUser } from '../../../../../actions/auth'
 import { getAllIndustries, getAllPositions } from '../../../../../actions/complementaryInfo'
-// import DatePicker from "react-datepicker";
+import DatePicker from "react-datepicker";
 import { createProfile, getCurrentProfile, getProfileIndustries } from '../../../../../actions/profile'
 import Footer from '../../../../components/Footer'
 import Head from '../../../../components/Head'
