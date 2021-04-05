@@ -1,0 +1,19 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="6226.27" height="1831.396" viewBox="300 0 6226.27 1831.396">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.212" y1="-0.281" x2="0.788" y2="1.281" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fd1423"/>
+      <stop offset="1" stop-color="#5a77d6"/>
+    </linearGradient>
+   
+  </defs>
+  <g id="Ellisse" transform="matrix(0.755, 0.656, -0.656, 0.755, 3005.944, 803.223)">
+    <g id="Group_8" data-name="Group 8" transform="translate(-1401.669 5380.89) rotate(-155)">
+      <rect id="Rectangle_738" data-name="Rectangle 738" width="953.369" height="553.636" rx="276.818" transform="translate(114.9 5178.639)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+  <g id="Quadrato">
+    <rect id="Rectangle_739" data-name="Rectangle 739" width="1224.198" height="1309.636" rx="56" transform="translate(0 517.368) rotate(-25)" fill="url(#linear-gradient)"/>
+  </g>
+ 
+</svg>

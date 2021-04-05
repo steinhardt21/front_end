@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2730.246" height="1751.842" viewBox="400 0 2730.246 1751.842">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.212" y1="-0.281" x2="0.788" y2="1.281" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fd1423"/>
+      <stop offset="1" stop-color="#5a77d6"/>
+    </linearGradient> 
+  </defs>
+  <g id="Quadrato" transform="translate(1568.785 357.998)">
+    <rect id="Rectangle_739" data-name="Rectangle 739" width="721.198" height="1201.636" rx="56" transform="translate(200 304.792) rotate(-25)" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="Ellisse" transform="translate(1551.419 543.479) rotate(120)">
+    <g id="Group_8" data-name="Group 8" transform="matrix(-0.809, -0.588, 0.588, -0.809, 1017.468, 1084.932)">
+      <path id="Path_246" data-name="Path 246" d="M263.954-5.01,862.866-16.378c145.778-2.767,261.716,109.677,258.955,251.15l-.02,1c-2.761,141.473-123.175,258.4-268.952,261.17L253.937,508.309C108.16,511.076-7.779,398.632-5.018,257.159l.019-1C-2.238,114.687,118.176-2.243,263.954-5.01Z" transform="translate(89.435 -47.374)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
