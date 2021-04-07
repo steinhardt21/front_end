@@ -20,10 +20,10 @@ const myCSV = [['ID', 'Data Creazione', 'Nome', 'Cognome', 'Email', 'Telefono', 
 const secondCSV = [['ID','Data Creazione', 'Nome progetto', 'Founder Email', 'Descrizione progetto', 'Settore', 'Fase di sviluppo', 'Figura ricercata', 'Competenze ricercate',
  'Tipo di collaborazione', 'Vincolo geografico', 'Dove', 'Status call', 'Numero candidature',  'N. Candidature accettate', 'N. Candidature  in attesa', 'N. Candidature inviate rifiutate']]
 
- const thirdCSV = [['ID','Data Creazione', 'Cover letter', 'ID Progett0', 'Progetto', 'ID Call', 'Vincolo geografico', 'Status', 'Data Aggiornamento Stato', 'Motivazione rifiuto', 'Nome Cognome Team member',
+ const thirdCSV = [['ID','Data Creazione', 'Cover letter', 'ID Progetto', 'Progetto', 'ID Call', 'Vincolo geografico', 'Status', 'Data Aggiornamento Stato', 'Motivazione rifiuto', 'Nome Team member' , 'Cognome Team member',
 'Email Team Member', 'Telefono Team Member', 'Età Team Member', 'Città Team Member', 'Professione Team member', 'Settore Team Member', 'Competenze Team Member', 
-'Biografia Team Member', 'Nome & Cognomer Founder', 'Email Founder', 'Telefono Founder', 'Età Founder', 'Città Founder', 'Professione Founder',
-'Settore Founder', 'Competenze Founder', 'Biografia Founder' ]]
+'Biografia Team Member', 'Nome Founde', 'Cognomer Founder', 'Email Founder', 'Telefono Founder', 'Età Founder', 'Città Founder', 'Professione Founder',
+'Settore Founder', 'Competenze Founder', 'Biografia Founder']]
 
 
 export const DonwnloaDocuments = ({getUsersGeneralData, getCallData, getCandidaturesData, admin: {usersGeneralData, callsGeneralData, candidaturesGeneralData}}) => {
@@ -71,7 +71,7 @@ export const DonwnloaDocuments = ({getUsersGeneralData, getCallData, getCandidat
                                             }
                                             myCSV.push([user._id, user.Date, user.Name, user.Surname, user.Email, user.Profile.Telephone || '',  user.Profile.Date_Of_Birth || '', 
                                     user.Profile.City_Living || '', '', user.Profile.Position.Position, user.Industry.Industry || '', user.Profile.Skills || '', user.Profile.Biography || '', user.Projects,
-                                user.CallCreated, user.numberCandidatures, user.numberCandidaturesAccepted, user.numberCandidaturesRejected, user.numberCandidaturesWaiting ])}
+                                user.CallCreated, user.numberCandidatures, user.numberCandidaturesAccepted, user.numberCandidaturesWaiting, user.numberCandidaturesRejected ])}
                                 
                                 ) 
                                     
@@ -139,8 +139,8 @@ export const DonwnloaDocuments = ({getUsersGeneralData, getCallData, getCandidat
                                             // }
 
                                             thirdCSV.push([candidature._id, candidature.Date_Inserted, candidature.Motivational_Letter, candidature.Call_Project.Project._id, candidature.Call_Project.Project.Name, candidature.Call_Project._id,
-                                            (candidature.Call_Project.City_Presence_Required ? 'Si' : 'No'), candidature.Status, candidature.Date_Closed, (candidature.Feedback ? candidature.Feedback : ''), candidature.User.Name + candidature.User.Surname, candidature.User.Email, candidature.ProfileCandidate.Telepone,
-                                        candidature.ProfileCandidate.Date_Of_Birth, candidature.ProfileCandidate.City_Living, candidature.ProfileCandidate.Position.Position, candidature.IndustryCandidate.Industry, candidature.ProfileCandidate.Skills, candidature.ProfileCandidate.Biography,candidature.OwnerUser.Name + candidature.OwnerUser.SUrname,
+                                            (candidature.Call_Project.City_Presence_Required ? 'Si' : 'No'), candidature.Status, candidature.Date_Closed, (candidature.Feedback ? candidature.Feedback : ''), candidature.User.Name, candidature.User.Surname, candidature.User.Email, candidature.ProfileCandidate.Telepone,
+                                        candidature.ProfileCandidate.Date_Of_Birth, candidature.ProfileCandidate.City_Living, candidature.ProfileCandidate.Position.Position, candidature.IndustryCandidate.Industry, candidature.ProfileCandidate.Skills, candidature.ProfileCandidate.Biography,candidature.OwnerUser.Name, candidature.OwnerUser.Surname,
                                     candidature.OwnerUser.Email, candidature.OwnerProfile.Telephone, candidature.OwnerProfile.Date_Of_Birth, candidature.OwnerProfile.City_Living, candidature.OwnerProfile.Position.Position, candidature.OwnerIndustry.Industry, candidature.OwnerProfile.Skills, candidature.OwnerProfile.Biography])
                                         }
                                 ) 
