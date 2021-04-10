@@ -58,7 +58,7 @@ export const MotivationalLetter = ({createCandidature, match, history}) => {
                                         formData = {formData}
                                         show={modalShow}
                                         clickMe={() => {createCandidature(formData)
-                                                        history.push('/newversion/dashboard')}}
+                                                        history.push('/dashboard')}}
                                         onHide={() => setModalShow(false)}
                                     />
                                 </div>

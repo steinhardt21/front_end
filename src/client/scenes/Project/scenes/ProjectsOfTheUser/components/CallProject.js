@@ -33,7 +33,7 @@ export const CallProject = ({call}) => {
                             </div>
                         </div>
                         <div className="col-md-3 my-auto text-center">
-                            <Link style={{width:'170px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/list-candidate/call/${call._id}`} >Candidature</Link>
+                            <Link style={{width:'170px'}} type="button" className="btn btn-primary btn-lg" to={`/list-candidate/call/${call._id}`} >Candidature</Link>
                         </div>
                     </Row>
                 <div className="row no-gutters">

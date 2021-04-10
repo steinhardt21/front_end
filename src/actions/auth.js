@@ -70,9 +70,8 @@ export const register = ({Name , Surname, EmailRegister, Password_1, history}, i
 
         dispatch(loadUser())
 
-        if(id !== undefined){history.push(`/newversion/create-profile/${id}`)}
-        else{history.push(`/newversion/create-profile`)}
-        // history.push(`/newversion/list-projects/${id}`)
+        if(id !== undefined){history.push(`/create-profile/${id}`)}
+        else{history.push(`/create-profile`)}
         
     }catch(err) {
 

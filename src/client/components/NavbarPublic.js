@@ -14,7 +14,7 @@ export default class NavbarPublic extends Component {
             <Fragment>
                     <Navbar id="navbarBackgroundBlack" bg="light" expand="lg">
                         <Navbar.Brand>
-                        <Link className="nounderline" to='/newversion/landing'>
+                        <Link className="nounderline" to='/'>
                              {/* <div id="logo-nucleus"></div> */}
                               <img
                                 src={Logo}
@@ -28,10 +28,10 @@ export default class NavbarPublic extends Component {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav" >
                             <Nav className="ml-auto" style={{fontSize:'20px'}}>
-                                <Link className="nounderline mr-md-5 text-center pb-3" to='/newversion/landing'>Home</Link>
-                                <Link className="nounderline mr-md-5 text-center pb-3" to='/newversion/list-calls'>Progetti</Link>
-                                <Link className="nounderline mr-md-5 text-center pb-3" to='/newversion/come-funziona'>Come funziona</Link>
-                                <Link to="/newversion/sign" type="button" className="btn border-white text-white mr-md-5">Accedi o registrati</Link>
+                                <Link className="nounderline mr-md-5 text-center pb-3" to='/'>Home</Link>
+                                <Link className="nounderline mr-md-5 text-center pb-3" to='/list-calls'>Progetti</Link>
+                                <Link className="nounderline mr-md-5 text-center pb-3" to='/come-funziona'>Come funziona</Link>
+                                <Link to="/sign" type="button" className="btn border-white text-white mr-md-5">Accedi o registrati</Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>

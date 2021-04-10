@@ -11,10 +11,10 @@ export default class Footer extends Component {
                     <div className="row text-white">
                         <div style={{fontSize:'16px'}} className="col-md-2 offset-md-2 col-12 text-center text-md-left mb-3 mb-md-0">
                        
-                          <p className="mb-0"><Link className="nounderline mr-md-5 text-center " to='/newversion/landing'>Home</Link></p>
-                          <p className="mb-0"><Link className="nounderline mr-md-5 text-center " to='/newversion/list-calls'>Progetti</Link></p>
-                          <p className="mb-0"><Link className="nounderline mr-md-5 text-center " to='/newversion/come-funziona'>Come funziona</Link></p>
-                          <p className="mb-0"><Link to="/newversion/sign" className="nounderline mr-md-5 text-center">Accedi o registrati</Link></p>
+                          <p className="mb-0"><Link className="nounderline mr-md-5 text-center " to='/'>Home</Link></p>
+                          <p className="mb-0"><Link className="nounderline mr-md-5 text-center " to='/list-calls'>Progetti</Link></p>
+                          <p className="mb-0"><Link className="nounderline mr-md-5 text-center " to='/come-funziona'>Come funziona</Link></p>
+                          <p className="mb-0"><Link to="/sign" className="nounderline mr-md-5 text-center">Accedi o registrati</Link></p>
                         </div>
                         <div className="col-md-4 text-center col-12">
                           <img

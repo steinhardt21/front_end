@@ -61,7 +61,7 @@ export const CallProject = ({project, history}) => {
                                   <button onClick={() =>  setModalShow(true)} style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" >Scopri</button>
                                   <Popup
                                         show={modalShow}
-                                        clickMe={() => {history.push(`/newversion/sign/${project._id}`)}}
+                                        clickMe={() => {history.push(`/sign/${project._id}`)}}
                                         onHide={() => setModalShow(false)}
                                     />
                               </div>

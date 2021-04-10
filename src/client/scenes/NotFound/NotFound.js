@@ -23,7 +23,7 @@ const NotFound = () => {
                 </Row>
                 <Row>
                     <div className="col-12  text-center mt-5">
-                         <Link style={{width:'340px'}} type="button" className="btn btn-primary btn-lg" id='buttonLanding' to={`/newversion/landing`} >Ritorna alla homepage</Link>
+                         <Link style={{width:'340px'}} type="button" className="btn btn-primary btn-lg" id='buttonLanding' to={`/`} >Ritorna alla homepage</Link>
                     </div>
                 </Row>
             </Container>

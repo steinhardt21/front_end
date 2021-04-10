@@ -376,7 +376,7 @@ export const createProject = (formData, history, edited = false) => async dispat
        dispatch(setAlert(edited ? 'Project Updated' : 'Project Created', 'success'))
 
     //    Redirect the user when a new project is created
-        history.push(`/newversion/create-candidature/${res.data._id}`)
+        history.push(`/create-candidature/${res.data._id}`)
    }
    catch(err)
    {

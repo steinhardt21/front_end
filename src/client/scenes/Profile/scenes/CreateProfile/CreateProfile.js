@@ -254,7 +254,7 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
                             
                             <div className="row">
                                 {/* <div className="col-10 offset-1 col-md-3 offset-md-1 text-center">
-                                    <Link to="/newversion/dashboard" className="btn border-white text-white creationProjectButton rounded-pill">Va alla dashboard</Link>
+                                    <Link to="/dashboard" className="btn border-white text-white creationProjectButton rounded-pill">Va alla dashboard</Link>
                                 </div>
                                 <div className="col-10 offset-1 offset-md-1 col-md-3 text-center mt-4 mb-4 mt-md-0 mb-md-0">
                                     <span className="logo_nucleus_symbol"></span>
@@ -264,7 +264,7 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
                                     <button type="submit" className="btn border-white text-white creationProjectButton rounded-pill">Salva</button>
                                 </div>
 
-                                {/* <Link className="btn btn-light my-1" to="/newversion/create-candidature">Go Back</Link> */}
+                                {/* <Link className="btn btn-light my-1" to="/create-candidature">Go Back</Link> */}
                             </div>
                         </Form> 
                     </div>

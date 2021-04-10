@@ -65,7 +65,7 @@ export const CandidatesForCall = ({match, getCandidatesCall, candidacy:{candidat
                     ) : (
                             <Fragment>
                                 <Row>
-                                    <div className="col-12 col-md-6 offset-md-3"> <h1 className="text-white display-4">Non hai ancora ricevuto nessuna candidatura! Ritorna alla <Link  to='/newversion/personal-list-projects'>lista dei tuoi progetti</Link></h1> </div>
+                                    <div className="col-12 col-md-6 offset-md-3"> <h1 className="text-white display-4">Non hai ancora ricevuto nessuna candidatura! Ritorna alla <Link  to='/personal-list-projects'>lista dei tuoi progetti</Link></h1> </div>
                                 </Row>
                             </Fragment>
                             )

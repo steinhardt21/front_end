@@ -53,7 +53,7 @@ export const ProjectsOfTheUser = ({ getProjectsofTheUser, getUserCalls, project:
                                     ))
                                 ))
                             }
-                            <Row><div className="col-md-6 offset-md-3 col-12 text-center mb-4"><Link style={{width:'340px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/create-project`} >Crea un nuovo progetto</Link></div></Row>
+                            <Row><div className="col-md-6 offset-md-3 col-12 text-center mb-4"><Link style={{width:'340px'}} type="button" className="btn btn-primary btn-lg" to={`/create-project`} >Crea un nuovo progetto</Link></div></Row>
                     </Fragment>
                     
                     ) : (
@@ -62,7 +62,7 @@ export const ProjectsOfTheUser = ({ getProjectsofTheUser, getUserCalls, project:
                                     <div className="pt-5 pb-3 col-12 col-md-6 offset-md-3 text-center"> <h3 className="text-white display-4">Non hai creato nessun progetto! </h3> </div>
                                 </Row>
                                 <Row>
-                                <div className="col-12 col-md-6 offset-md-3 text-center"><Link style={{width:'340px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/create-project`} >Crea un nuovo progetto</Link></div>
+                                <div className="col-12 col-md-6 offset-md-3 text-center"><Link style={{width:'340px'}} type="button" className="btn btn-primary btn-lg" to={`/create-project`} >Crea un nuovo progetto</Link></div>
                                 </Row>
                             </Fragment>
                             )

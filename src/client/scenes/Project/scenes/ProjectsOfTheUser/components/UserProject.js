@@ -28,7 +28,7 @@ export const UserProject = ({project}) => {
                                 <p className="m-0"><span className="font-weight-bold">Stato:</span> {project.Project.Status}</p>
                             </div>
                             <div className="col-4">
-                                <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/list-candidate/${project._id}`} >Vedi Call associalte</Link>
+                                <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/list-candidate/${project._id}`} >Vedi Call associalte</Link>
                             </div>
                         </p>
                         

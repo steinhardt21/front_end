@@ -112,7 +112,7 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
             setModalShow(true)
         }
         else{
-            history.push(`/newversion/call/motivational-letter/${match.params.id}`)
+            history.push(`/call/motivational-letter/${match.params.id}`)
         }
    }
 
@@ -177,7 +177,7 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
                 
                 (<Row className="pb-5">
                     <div className="col-12 text-center">
-                        {/* <Link style={{width:'190px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/call/motivational-letter/${match.params.id}`} >Candidati</Link> */}
+                        {/* <Link style={{width:'190px'}} type="button" className="btn btn-primary btn-lg" to={`/call/motivational-letter/${match.params.id}`} >Candidati</Link> */}
                             
                         <button className="btn btn-primary btn-lg" onClick={() => checkProfile()}>Invia candidatura</button>
                                     <Popup
@@ -189,7 +189,7 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
                                         clickMe={() => {
                                                             
                                                             // createCandidature(formData)
-                                                            history.push(`/newversion/create-profile/${match.params.id}`)
+                                                            history.push(`/create-profile/${match.params.id}`)
                                                         }
                                                 }
                                         onHide={() => setModalShow(false)}

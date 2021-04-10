@@ -101,7 +101,7 @@ export const SummaryCandidature = ({candidacies}) => {
                 <Row className='mt-4'>
                     
                     <div className="col-12 my-auto text-center">
-                        <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/personal-list-candidacies`} >Scopri</Link>
+                        <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/personal-list-candidacies`} >Scopri</Link>
                     </div>
                 </Row>
              </div>

@@ -40,11 +40,11 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
         if(newCandidacy) {
             console.log('NEW CANDIDACY')
             setModalShow(true);
-            // history.push(`/newversion/create-candidature/${match.params.id}`)
+            // history.push(`/create-candidature/${match.params.id}`)
         }
         else {
             setModalGoDashboard(true)
-            // history.push(`/newversion/dashboard`)
+            // history.push(`/dashboard`)
         }
 
 
@@ -183,7 +183,7 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                                     <button  style={{ width: '170px'}} type="submit" onClick={() => setNewCandidacy(false)} className="btn border-white text-white creationProjectButton rounded-pill">Invia</button>
                                 </div>
 
-                                {/* <Link className="btn btn-light my-1" to="/newversion/create-candidature">Go Back</Link> */}
+                                {/* <Link className="btn btn-light my-1" to="/create-candidature">Go Back</Link> */}
                             </div>
                         </Form>
                             <PopupNewCandidature
@@ -193,7 +193,7 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                                                     setModalMessage(true)
                                                         // setModalShowAcceptedCalendark(true)
                                                     // createCandidature(formData)
-                                                    // history.push('/newversion/create-profile')
+                                                    // history.push('/create-profile')
                                                 }
                                         }
                                 onHide={() => setModalShow(false)}
@@ -211,7 +211,7 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                                                         Project: match.params.id
                                                     })
                                                     setModalMessage(false)
-                                                    history.push(`/newversion/create-candidature/${match.params.id}`)
+                                                    history.push(`/create-candidature/${match.params.id}`)
                                                 
                                                     window.location.reload();
                                                 }
@@ -226,7 +226,7 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                                                     setModalMessageGoDashboard(true)
                                                         // setModalShowAcceptedCalendark(true)
                                                     // createCandidature(formData)
-                                                    // history.push('/newversion/create-profile')
+                                                    // history.push('/create-profile')
                                                 }
                                         }
                                 onHide={() => setModalGoDashboard(false)}
@@ -244,7 +244,7 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                                                         City_Presence_Required:' ',
                                                         Project: match.params.id
                                                     })
-                                                    history.push(`/newversion/dashboard`)
+                                                    history.push(`/dashboard`)
                                                 }}
                                 onHide={() => setModalMessageGoDashboard(false)}
                             />
@@ -287,7 +287,7 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                                     <button   type="submit" onClick={() => setNewCandidacy(false)} className="btn border-white text-white creationProjectButton rounded-pill">Invia</button>
                                 </div>
 
-                                {/* <Link className="btn btn-light my-1" to="/newversion/create-candidature">Go Back</Link> */}
+                                {/* <Link className="btn btn-light my-1" to="/create-candidature">Go Back</Link> */}
                             </div>
                     </Form>
                 )}

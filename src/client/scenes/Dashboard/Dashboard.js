@@ -63,7 +63,7 @@ export const Dashboard = ( { getCandidaturesOfTheUser, getUserCalls, candidacy: 
                             <Fragment> 
                                 <Row className="pt-4 pb-2">
                                 <div className="col-md-6 offset-md-3 col-12 mb-3"> <h3 className="text-white display-4 ">I miei progetti</h3> </div>
-                                <div className="col-10 offset-1 col-md-9 offset-md-3 text-white"><h5>Non hai creato nessun progetto!   <Link style={{width:'340px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/create-project`} >Crea nuovo progetto</Link></h5></div>
+                                <div className="col-10 offset-1 col-md-9 offset-md-3 text-white"><h5>Non hai creato nessun progetto!   <Link style={{width:'340px'}} type="button" className="btn btn-primary btn-lg" to={`/create-project`} >Crea nuovo progetto</Link></h5></div>
                                 </Row>
                             </Fragment>
                             )

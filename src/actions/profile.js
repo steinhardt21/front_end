@@ -112,8 +112,8 @@ export const createProfile = (
     // dispatch(setAlert(edit ? 'Profile Updated' : 'Profile Created', 'success'));
 
     // if (!edit) {
-      if(id !== undefined){history.push(`/newversion/view-call/${id}`)}
-      else {history.push('/newversion/dashboard')}
+      if(id !== undefined){history.push(`/view-call/${id}`)}
+      else {history.push('/dashboard')}
     // }
   } catch (err) {
     const errors = err.response.data.errors;

@@ -46,7 +46,7 @@ export const Landing = ({getProjectsShowcase, project:{projects, loadingShowcase
                         <h1 id="landing-text-first" className="text-white">Il <b id="bold-text">team </b>ideale per la tua <b id="bold-text">idea</b></h1>
                     </div>
                     <div className="col-10 col-sm-10 offset-1 col-md-3 my-auto pl-4 pt-3 pt-md-0">
-                        <Link to={`/newversion/dashboard`}><button type="button" className="btn border-white text-white my-auto landingButton rounded-pill"  >
+                        <Link to={`/dashboard`}><button type="button" className="btn border-white text-white my-auto landingButton rounded-pill"  >
                             {/* <span id="text-in-buttom">Trova il tuo team</span> */}
                             Trova il tuo team
                         </button></Link>
@@ -79,7 +79,7 @@ export const Landing = ({getProjectsShowcase, project:{projects, loadingShowcase
         <Container id="rectangle-landing" fluid>
                 <Row>
                     <div className="col-12 mr-auto text-md-right text-center mb-5 mb" id="buttonLandingMargin">
-                         <Link  type="button" className="btn btn-primary btn-lg" id='buttonLanding' to={`/newversion/create-project`} >Inserisci il tuo progetto</Link>
+                         <Link  type="button" className="btn btn-primary btn-lg" id='buttonLanding' to={`/create-project`} >Inserisci il tuo progetto</Link>
                     </div>
                 </Row>
                
@@ -119,8 +119,8 @@ export const Landing = ({getProjectsShowcase, project:{projects, loadingShowcase
                 <Row className="mt-1 mt-md-5" >
                     <Col className="text-center text-gray">
                         {isAuthenticated ? (
-                            <p id="landing-text-fifth" className="landingText"><u><Link to="/newversion/list-projects" style={{color:'grey'}}>Vedi tutti i progetti</Link></u></p>
-                        ):(<p id="landing-text-fifth" className="landingText"><u><Link to="/newversion/list-calls" style={{color:'grey'}}>Vedi tutti i progetti</Link></u></p>)}
+                            <p id="landing-text-fifth" className="landingText"><u><Link to="/list-projects" style={{color:'grey'}}>Vedi tutti i progetti</Link></u></p>
+                        ):(<p id="landing-text-fifth" className="landingText"><u><Link to="/list-calls" style={{color:'grey'}}>Vedi tutti i progetti</Link></u></p>)}
                     </Col>
                 </Row>
                 <Row className="mt-5 mb-5">

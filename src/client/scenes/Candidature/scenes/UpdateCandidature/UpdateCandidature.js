@@ -30,7 +30,7 @@ export const UpdateCandidature = ({getCandidature, updateCandidature, match, his
         e.preventDefault()
 
         updateCandidature(formData)
-        history.push('/newversion/dashboard')
+        history.push('/dashboard')
 
     }
 

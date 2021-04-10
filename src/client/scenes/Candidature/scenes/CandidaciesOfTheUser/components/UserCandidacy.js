@@ -65,7 +65,7 @@ export const UserCandidacy = ({candidacy}) => {
                                     <button style={{width:'130px', fontSize:'18px', cursor:'not-allowed'}} type="button" className="btn buttonInValutazione btn-warning btn-lg">In valutazione</button>
                                     <br />
                                     <br />
-                                    {/* <Link style={{width:'140px', fontSize:'18px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/call/update-motivational-letter/${candidacy._id}`}>Modifica</Link> */}
+                                    {/* <Link style={{width:'140px', fontSize:'18px'}} type="button" className="btn btn-primary btn-lg" to={`/call/update-motivational-letter/${candidacy._id}`}>Modifica</Link> */}
                                 </Fragment>
                             ) :
                             (
@@ -74,14 +74,14 @@ export const UserCandidacy = ({candidacy}) => {
                                     <button style={{width:'110px', fontSize:'18px',cursor:'not-allowed'}} type="button" className="btn btn-danger btn-lg">Rifiutato</button>
                                     <br />
                                     <br />
-                                    {/* <Link style={{width:'140px', fontSize:'18px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/call/update-motivational-letter/${candidacy._id}`}>Modifica</Link> */}
+                                    {/* <Link style={{width:'140px', fontSize:'18px'}} type="button" className="btn btn-primary btn-lg" to={`/call/update-motivational-letter/${candidacy._id}`}>Modifica</Link> */}
                                 </Fragment>) :
                                 ( <Fragment>
                                     <br />
                                     <button style={{width:'130px', fontSize:'18px', cursor:'not-allowed'}} type="button" className="btn btn-success btn-lg">Accettato</button>
                                     <br />
                                     <br />
-                                    {/* <Link style={{width:'140px', fontSize:'18px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/call/update-motivational-letter/${candidacy._id}`}>Modifica</Link> */}
+                                    {/* <Link style={{width:'140px', fontSize:'18px'}} type="button" className="btn btn-primary btn-lg" to={`/call/update-motivational-letter/${candidacy._id}`}>Modifica</Link> */}
                                 </Fragment>)
                             )
                         }

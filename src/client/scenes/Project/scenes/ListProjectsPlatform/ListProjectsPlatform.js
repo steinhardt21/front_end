@@ -59,7 +59,7 @@ useEffect(() => {
                                     <div className="col-12 col-md-6 offset-md-3"> <h3 className="text-white display-4"></h3> </div>
                                 </Row>
                                 <Row className="pt-5 pb-3">
-                                    <div className="pt-5 pb-3 col-12 col-md-6 offset-md-3"> <h3 className="text-white display-4">Non ci sono progetti disponibili! Ritorna alla <Link  to='/newversion/dashboard'>home</Link></h3> </div>
+                                    <div className="pt-5 pb-3 col-12 col-md-6 offset-md-3"> <h3 className="text-white display-4">Non ci sono progetti disponibili! Ritorna alla <Link  to='/dashboard'>home</Link></h3> </div>
                                 </Row>
                             </Fragment>
                             )

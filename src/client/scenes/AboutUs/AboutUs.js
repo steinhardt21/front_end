@@ -76,7 +76,7 @@ const AboutUs = ({auth: {isAuthenticated}}) => {
                 </Row>
                 <Row className="mt-4 mt-md-0">
                     <div className="col-12 text-center my-auto">                          
-                         <Link type="button"  className="btn btn-primary btn-lg" id='buttonLanding' to={`/newversion/create-project`} >Inizia ora</Link>
+                         <Link type="button"  className="btn btn-primary btn-lg" id='buttonLanding' to={`/create-project`} >Inizia ora</Link>
                     </div>
                 </Row>
                 <Row className="mt-5 mb-5">

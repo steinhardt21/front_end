@@ -25,7 +25,7 @@ const PrivateRoute = ({
          
           <Component {...props} />
       ) : (
-        <Redirect to="/newversion/sign" />
+        <Redirect to="/sign" />
       )
     }
   />

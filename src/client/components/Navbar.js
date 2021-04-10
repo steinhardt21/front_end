@@ -15,7 +15,7 @@ const NavbarPrivate = ({ auth: { isAuthenticated, loading }, logout }) => {
             <Fragment>
                 <Navbar id="navbarBackgroundBlack" bg="light" expand="lg">
                         <Navbar.Brand>
-                        <Link className="nounderline" to='/newversion/landing'>
+                        <Link className="nounderline" to='/'>
                            
                               <img
                                 src={Logo}
@@ -29,9 +29,9 @@ const NavbarPrivate = ({ auth: { isAuthenticated, loading }, logout }) => {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav" >
                             <Nav className="ml-auto" style={{fontSize:'20px'}}>
-                                <Link className="nounderline mr-5 pr-5" to='/newversion/landing'>Home</Link>
-                                <Link className="nounderline mr-5 pr-5" to='/newversion/list-projects'>Progetti</Link>
-                                <Link className="nounderline mr-5 pr-5" to='/newversion/call/come-funziona-privata'>Come funziona</Link>
+                                <Link className="nounderline mr-5 pr-5" to='/'>Home</Link>
+                                <Link className="nounderline mr-5 pr-5" to='/list-projects'>Progetti</Link>
+                                <Link className="nounderline mr-5 pr-5" to='/call/come-funziona-privata'>Come funziona</Link>
                                 <button onClick={logout} type="button" className="btn border-white text-white">Log out</button>
                             </Nav>
                             

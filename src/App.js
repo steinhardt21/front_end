@@ -75,36 +75,28 @@ const App = () =>
   return (
   <Provider store = {store}>
     <Router>
-      <Fragment>
-          {/* <Layout/>  */}
-          {/* <LayoutAdmin /> */}
-
-          {/* <Navbar /> */}
-          
-         
+      <Fragment>        
             {/* <Alert /> */}
             <Switch>
-                <Route exact path="/" component={SignUser}/>
+                <Route exact path="/" component={Landing}/>
               
                 {/**Client new pages */}
-                  <PrivateRoute exact path="/newversion/create-profile/:id?" component={CreateProfileUser} />
-                  <PrivateRoute exact path="/newversion/dashboard" component={DashboardUser} />
-                  <PrivateRoute exact path="/newversion/create-project" component={CreateProjectUser} />
-                  <PrivateRoute exact path="/newversion/personal-list-projects" component={UserListProjects} />
-                  <PrivateRoute exact path="/newversion/create-candidature/:id" component={CreateCandidature} />
-                  <PrivateRoute exact path="/newversion/list-projects" component={ListProjects} />
-                  <PrivateRoute exact path="/newversion/view-call/:id" component={CallView} />
-                  <PrivateRoute exact path="/newversion/call/motivational-letter/:id" component={MotivationalLetter} />
-                  <PrivateRoute exact path="/newversion/personal-list-candidacies" component={UserListCandidacies} />
-                  <PrivateRoute exact path="/newversion/list-candidate/call/:id" component={ListCandidatesCall} />
-                  <PrivateRoute exact path="/newversion/call/update-motivational-letter/:id" component={UpdateCandidature} />
-                  <PrivateRoute exact path="/newversion/call/come-funziona-privata" component={AboutUsPrivate} />
+                  <PrivateRoute exact path="/create-profile/:id?" component={CreateProfileUser} />
+                  <PrivateRoute exact path="/dashboard" component={DashboardUser} />
+                  <PrivateRoute exact path="/create-project" component={CreateProjectUser} />
+                  <PrivateRoute exact path="/personal-list-projects" component={UserListProjects} />
+                  <PrivateRoute exact path="/create-candidature/:id" component={CreateCandidature} />
+                  <PrivateRoute exact path="/list-projects" component={ListProjects} />
+                  <PrivateRoute exact path="/view-call/:id" component={CallView} />
+                  <PrivateRoute exact path="/call/motivational-letter/:id" component={MotivationalLetter} />
+                  <PrivateRoute exact path="/personal-list-candidacies" component={UserListCandidacies} />
+                  <PrivateRoute exact path="/list-candidate/call/:id" component={ListCandidatesCall} />
+                  <PrivateRoute exact path="/call/update-motivational-letter/:id" component={UpdateCandidature} />
+                  <PrivateRoute exact path="/call/come-funziona-privata" component={AboutUsPrivate} />
 
-
-                  <Route exact path="/newversion/landing" component={Landing} />
-                  <Route exact path="/newversion/sign/:id?" component={SignUser} />
-                  <Route exact path="/newversion/come-funziona" component={AboutUs} />
-                  <Route exact path="/newversion/list-calls" component={ListCallPublic} />
+                  <Route exact path="/sign/:id?" component={SignUser} />
+                  <Route exact path="/come-funziona" component={AboutUs} />
+                  <Route exact path="/list-calls" component={ListCallPublic} />
 
                 {/* Admin section */}
                       <AdminRoute exact path="/admin/dashboard" component={DashboardAdmin} />            

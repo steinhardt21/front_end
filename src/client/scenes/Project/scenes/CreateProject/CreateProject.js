@@ -45,7 +45,7 @@ export const CreateProject = ({createProject, project, history, getAllIndustries
         // createProject(formData, history);
         
 
-      //  history.push('/newversion/create-candidature')
+      //  history.push('/create-candidature')
     }
 
     function LaunchCreateProject() {
@@ -53,7 +53,7 @@ export const CreateProject = ({createProject, project, history, getAllIndustries
       formData['Analysis_Question'] = analysisQuestion
       console.log(formData)
       createProject(formData, history)
-      history.push('/newversion/create-candidature')
+      history.push('/create-candidature')
     }
 
     useEffect(() => {
@@ -64,7 +64,7 @@ export const CreateProject = ({createProject, project, history, getAllIndustries
 
     // useEffect(() => {
     //     console.log(project.project)
-    //     if(project != null && project.project != null) history.push(`/newversion/create-candidature/${project.project._id}`)
+    //     if(project != null && project.project != null) history.push(`/create-candidature/${project.project._id}`)
 
     // }, [project.loading])
 
@@ -171,7 +171,7 @@ export const CreateProject = ({createProject, project, history, getAllIndustries
                                     />
                                 </div>
 
-                                {/* <Link className="btn btn-light my-1" to="/newversion/create-candidature">Go Back</Link> */}
+                                {/* <Link className="btn btn-light my-1" to="/create-candidature">Go Back</Link> */}
                             </div>
                         </Form>
 

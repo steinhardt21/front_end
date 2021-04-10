@@ -56,7 +56,7 @@ export const CallProject = ({project}) => {
                                   <Link to={`/project/${_id}`} className="card-link">Detagli progetto</Link>
                               </div>
                               <div className="col-6 text-center  my-auto">
-                                  <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/view-call/${project._id}`} >Scopri</Link>
+                                  <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/view-call/${project._id}`} >Scopri</Link>
                               </div>
                           </div>                          
                       </div>
@@ -94,7 +94,7 @@ export const CallProject = ({project}) => {
                             </div>
                         </div>
                         <div className="col-md-3 my-auto text-center">
-                            <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/view-call/${project._id}`}>Scopri</Link>
+                            <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/view-call/${project._id}`}>Scopri</Link>
                         </div>
                 </div>
                 <div className="row no-gutters">

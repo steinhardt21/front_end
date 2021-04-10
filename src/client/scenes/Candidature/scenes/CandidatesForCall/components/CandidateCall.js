@@ -68,7 +68,7 @@ export const CandidateCall = ({candidate, updateCallStatus, callId, history}) =>
                                                                 setModalShow(false)
                                                                  setModalShowAcceptedCalendark(true)
                                                                 // createCandidature(formData)
-                                                                // history.push('/newversion/create-profile')
+                                                                // history.push('/create-profile')
                                                             }
                                                     }
                                             onHide={() => setModalShow(false)}
@@ -83,7 +83,7 @@ export const CandidateCall = ({candidate, updateCallStatus, callId, history}) =>
                                                                 window.location.assign('https://forms.gle/3NZCA5PNMJ8ffgpB7')
                                                                 // refreshPage()
                                                                 // createCandidature(formData)
-                                                                // history.push(`/newversion/list-candidate/call/${callId}`)
+                                                                // history.push(`/list-candidate/call/${callId}`)
                                                             }
                                                     }
                                             onHide={() => setModalShowAcceptedCalendark(false)}
@@ -102,7 +102,7 @@ export const CandidateCall = ({candidate, updateCallStatus, callId, history}) =>
                                                                 setModalShowRejected(false)
                                                                setModalShowRejectedFeedback(true)
                                                                 // createCandidature(formData)
-                                                                // history.push('/newversion/create-profile')
+                                                                // history.push('/create-profile')
                                                             }
                                                     }
                                             onHide={() => setModalShowRejected(false)}
@@ -120,7 +120,7 @@ export const CandidateCall = ({candidate, updateCallStatus, callId, history}) =>
                                                                 // console.log(e)
                                                                 updateCallStatus({idCandidature: candidate._id, Status: 'Rifiutato', Feedback: e })
                                                                 refreshPage()
-                                                                // history.push(`/newversion/list-candidate/call/${callId}`)
+                                                                // history.push(`/list-candidate/call/${callId}`)
                                                             }
                                                     } 
                                             onHide={() => setModalShowRejectedFeedback(false)}
@@ -147,7 +147,7 @@ export const CandidateCall = ({candidate, updateCallStatus, callId, history}) =>
 
                                 </div>
                                 <div className="col-4">
-                                    {/* <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/newversion/list-candidate/${project._id}`} >Vedi candidature</Link> */}
+                                    {/* <Link style={{width:'140px'}} type="button" className="btn btn-primary btn-lg" to={`/list-candidate/${project._id}`} >Vedi candidature</Link> */}
                                 </div>
                             </div>
                             <div className="card-text row no-gutters">

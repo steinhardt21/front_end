@@ -60,7 +60,7 @@ export const CandidaciesOfTheUser = (
                     ) : (
                             <Fragment>
                                 <Row className="pt-5 pb-3">
-                                    <div className="pt-5 pb-3 col-12 col-md-6 offset-md-3"> <h3 className="text-white display-4">Non ti sei ancora candidato a nessun progetto! Vedi i progetti disponibili a <Link style={{color:'white'}}  to='/newversion/list-projects'>questa pagina</Link>!</h3> </div>
+                                    <div className="pt-5 pb-3 col-12 col-md-6 offset-md-3"> <h3 className="text-white display-4">Non ti sei ancora candidato a nessun progetto! Vedi i progetti disponibili a <Link style={{color:'white'}}  to='/list-projects'>questa pagina</Link>!</h3> </div>
                                 </Row>
                             </Fragment>
                             )

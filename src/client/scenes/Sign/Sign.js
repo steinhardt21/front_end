@@ -56,7 +56,7 @@ export const Sign = ({login, isAuthenticated, register, history, match}) => {
     }
 
     if (isAuthenticated) {
-        return <Redirect to="/newversion/dashboard"/>;
+        return <Redirect to="/dashboard"/>;
     }
 
     return (
