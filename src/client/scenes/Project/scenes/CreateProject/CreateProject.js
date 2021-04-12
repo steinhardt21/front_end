@@ -1,6 +1,3 @@
-/**
- *  Page where the user create a new project
- */
 import React, { Fragment, useEffect, useState } from 'react'
 import { Container, Form, Row } from 'react-bootstrap'
 import "react-datepicker/dist/react-datepicker.css"
@@ -37,15 +34,6 @@ export const CreateProject = ({createProject, project, history, getAllIndustries
     const onSubmit = e => {
         e.preventDefault()
         setModalShow(true)
-
-        // console.log(analysisQuestion)
-        // formData['Analysis_Question'] = analysisQuestion
-        // console.log(formData)
-
-        // createProject(formData, history);
-        
-
-      //  history.push('/create-candidature')
     }
 
     function LaunchCreateProject() {

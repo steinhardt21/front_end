@@ -21,7 +21,7 @@ export const CallProject = ({call}) => {
                         </div>
                         <div className="col-md-5">
                             <div className="card-body p-0">
-                                <Row className="card-title no-gutters "><h2 className="text-center text-md-left"><u>{call.Position.Position}</u></h2></Row>
+                                {(call.Position._id === '6074b0c6e25f3348639fb03a') ? null : <Row className="card-title no-gutters "><h2 className="text-center text-md-left"><u>{call.Position.Position}</u></h2></Row>}
                                 <Row className="card-text no-gutters">
                                     <div className="col-md-12 col-12 text-center text-md-left">
                                         <p className="m-0"><span className="font-weight-bold">Settore:</span> {call.Industry}</p>

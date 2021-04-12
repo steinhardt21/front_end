@@ -250,7 +250,7 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                             />
                     </Fragment>
                 ):
-                (
+                (<Fragment>
                     <Form onSubmit = {e => onSubmit(e)} >
                         <Form.Group >
                         <Form.Label>Tipo di collaborazione ricercata</Form.Label>
@@ -290,6 +290,37 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                                 {/* <Link className="btn btn-light my-1" to="/create-candidature">Go Back</Link> */}
                             </div>
                     </Form>
+                        <PopupGoDashboard
+                        show={modalGoDashboard}
+                        clickMe={() => {   // updateAccepted()
+                                            // setModalShow(false)
+                                            setModalGoDashboard(false)
+                                            setModalMessageGoDashboard(true)
+                                                // setModalShowAcceptedCalendark(true)
+                                            // createCandidature(formData)
+                                            // history.push('/create-profile')
+                                        }
+                                }
+                        onHide={() => setModalGoDashboard(false)}
+                    />
+                    <PopupMessageGoDashboard
+                        show={modalMessageGoDashboard}
+                        clickMe={() => {   // updateAccepted()
+                                            setModalMessage(false)
+                                            createCallProject(formData, history)
+
+                                            setFormData({
+                                                Position:' ',
+                                                Skills: ' ',
+                                                Type_Colaboration:' ',
+                                                City_Presence_Required:' ',
+                                                Project: match.params.id
+                                            })
+                                            history.push(`/dashboard`)
+                                        }}
+                        onHide={() => setModalMessageGoDashboard(false)}
+                    />
+                </Fragment>
                 )}
 
                 
@@ -297,6 +328,7 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                 </Row>
             </Container>            
         </div>
+
     )
 }
 

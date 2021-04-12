@@ -39,6 +39,15 @@ export const Dashboard = ( { getCandidaturesOfTheUser, getUserCalls, candidacy: 
             
 
             <Container fluid id="dashboardBackgroundRectangle">
+              <Row className=" pt-5">
+                                <div className="col-md-6 offset-md-3 col-12 mb-3"> <h3 className="text-white display-4 ">Status generale candidature</h3> </div>
+                 </Row>
+                
+                <Row className="pb-5">
+                    <div className="col-10 offset-1 col-md-6 offset-md-3">
+                        <SummaryCandidature candidacies= {userCandidacies} />
+                    </div>
+                </Row>
                 
                 { userCandidaciesLoading ? (<Spinner />) :(
                         
@@ -71,15 +80,7 @@ export const Dashboard = ( { getCandidaturesOfTheUser, getUserCalls, candidacy: 
                     }   
 
                 
-                <Row className=" mt-1">
-                                <div className="col-md-6 offset-md-3 col-12 mb-3"> <h3 className="text-white display-4 ">Status generale candidature</h3> </div>
-                 </Row>
                 
-                <Row className="pb-5">
-                    <div className="col-10 offset-1 col-md-6 offset-md-3">
-                        <SummaryCandidature candidacies= {userCandidacies} />
-                    </div>
-                </Row>
                 
             </Container>
 

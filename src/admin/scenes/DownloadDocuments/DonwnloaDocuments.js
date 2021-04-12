@@ -120,30 +120,42 @@ export const DonwnloaDocuments = ({getUsersGeneralData, getCallData, getCandidat
                     <button className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" 
                             onClick={() => {
                                 
-                                if(candidaturesGeneralData !== null && candidaturesGeneralData.length != 0) {
-
-                                    
-                                    candidaturesGeneralData.map( (candidature) => 
-                                        {
-                                            // if( typeof user.Profile === 'undefined') user.Profile = {
-                                            //     Telephone: '',
-                                            //     Date_Of_Birth: '',
-                                            //     City_Living: '',
-                                            //     Position: '',
-                                            //     Skills: '',
-                                            //     Biography: ''
-                                            // }
-
-                                            // if( typeof user.Industry === 'undefined') user.Industry = {
-                                            //     Industry: ''
-                                            // }
-
-                                            thirdCSV.push([candidature._id, candidature.Date_Inserted, candidature.Motivational_Letter, candidature.Call_Project.Project._id, candidature.Call_Project.Project.Name, candidature.Call_Project._id,
-                                            (candidature.Call_Project.City_Presence_Required ? 'Si' : 'No'), candidature.Status, candidature.Date_Closed, (candidature.Feedback ? candidature.Feedback : ''), candidature.User.Name, candidature.User.Surname, candidature.User.Email, candidature.ProfileCandidate.Telepone,
-                                        candidature.ProfileCandidate.Date_Of_Birth, candidature.ProfileCandidate.City_Living, candidature.ProfileCandidate.Position.Position, candidature.IndustryCandidate.Industry, candidature.ProfileCandidate.Skills, candidature.ProfileCandidate.Biography,candidature.OwnerUser.Name, candidature.OwnerUser.Surname,
-                                    candidature.OwnerUser.Email, candidature.OwnerProfile.Telephone, candidature.OwnerProfile.Date_Of_Birth, candidature.OwnerProfile.City_Living, candidature.OwnerProfile.Position.Position, candidature.OwnerIndustry.Industry, candidature.OwnerProfile.Skills, candidature.OwnerProfile.Biography])
-                                        }
-                                ) 
+                        if(candidaturesGeneralData !== null && candidaturesGeneralData.length != 0) {
+                            candidaturesGeneralData.map( (candidature) => 
+                                {
+                                    thirdCSV.push(
+                                        [
+                                            candidature._id, 
+                                            candidature.Date_Inserted,
+                                            candidature.Motivational_Letter,
+                                            candidature.Call_Project.Project._id,
+                                            candidature.Call_Project.Project.Name,
+                                            candidature.Call_Project._id,
+                                            (candidature.Call_Project.City_Presence_Required ? 'Si' : 'No'), 
+                                            candidature.Status, candidature.Date_Closed, (candidature.Feedback ? candidature.Feedback : ''), 
+                                            candidature?.User.Name, 
+                                            candidature?.User.Surname, 
+                                            candidature?.User.Email,
+                                            candidature?.ProfileCandidate?.Telephone,
+                                            candidature?.ProfileCandidate?.Date_Of_Birth, 
+                                            candidature?.ProfileCandidate?.City_Living, 
+                                            candidature?.ProfileCandidate?.Position?.Position, 
+                                            candidature?.IndustryCandidate.Industry, 
+                                            candidature?.ProfileCandidate?.Skills, 
+                                            candidature?.ProfileCandidate?.Biography,
+                                            candidature?.OwnerUser?.Name, 
+                                            candidature?.OwnerUser?.Surname,
+                                            candidature?.OwnerUser?.Email, 
+                                            candidature?.OwnerProfile?.Telephone, 
+                                            candidature?.OwnerProfile?.Date_Of_Birth, 
+                                            candidature?.OwnerProfile?.City_Living, 
+                                            candidature?.OwnerProfile?.Position.Position, 
+                                            candidature?.OwnerIndustry?.Industry, 
+                                            candidature?.OwnerProfile?.Skills,
+                                            candidature?.OwnerProfile?.Biography]
+                                            )
+                                }
+                        ) 
                                     
                                 console.log('mycsv', thirdCSV)
                                 setCandidaturesList(thirdCSV) 

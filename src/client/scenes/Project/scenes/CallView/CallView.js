@@ -142,8 +142,10 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
                                 </div>
                                 <div className="col-md-5">
                                     <div className="card-body p-0">
-                                        <Row className="no-gutters"><div className="col-md-12 col-12 text-center text-md-left"><h2><u>{Position}</u></h2></div></Row>
+                                        {/* <Row className="no-gutters"><div className="col-md-12 col-12 text-center text-md-left"><h2><u>{Position}</u></h2></div></Row> */}
+                                        {( call.Position._id === '6074b0c6e25f3348639fb03a') ? null : <Row className="no-gutters"><div className="col-md-12 col-12 text-center text-md-left"><h2><u>{Position}</u></h2></div></Row>}
                                         <Row className="card-text no-gutters">
+                                       
                                             <div className="col-md-12 col-12 text-center text-md-left">
                                                 <p className="m-0"><span className="font-weight-bold">Settore:</span> {Industry}</p>
                                                 <p className="m-0"><span className="font-weight-bold">Fase:</span> {Development_Stage}</p>

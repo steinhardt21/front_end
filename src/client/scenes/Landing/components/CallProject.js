@@ -51,8 +51,9 @@ export const CallProject = ({project, history}) => {
                           <h5 className="card-title row no-gutters">{ }</h5>
                           <div className="card-text row no-gutters">
                               <div className="col-5 offset-1">
-                                  <p style={{fontSize:'20px'}}  className="mb-1"><b>Figura ricercata:</b></p>
-                                  <p id="cardCallFontPosition" className="m-0 display-4 mb-3"><u><b>{project.Position.Position}</b></u></p>
+                              {(project.Position._id === '6074b0c6e25f3348639fb03a') ? null :   <p style={{fontSize:'20px'}}  className="mb-1"><b>Figura ricercata:</b></p>}
+                                  {/* <p id="cardCallFontPosition" className="m-0 display-4 mb-3"><u><b>{project.Position.Position}</b></u></p> */}
+    {(project.Position._id === '6074b0c6e25f3348639fb03a') ? null : <p id="cardCallFontPosition" className="m-0 display-4 mb-3"><u><b>{project.Position.Position}</b></u></p>}
                                   <p className="m-0"><span className="font-weight-bold">Settore:</span> {project.Industry}</p>
                                   <p className="m-0"><span className="font-weight-bold">Fase:</span> {project.Project.Development_Stage.Development_Stage} </p>
                                   {/* <Link to={`/project/${_id}`} className="card-link">Detagli progetto</Link> */}
