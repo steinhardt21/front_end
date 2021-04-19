@@ -38,7 +38,7 @@ export const Footer = ({registerEmailUser}) => {
             <footer id="footerNucleus" className="pt-4">
                 <div className="container-fluid">
                     <div className="row text-white">
-                        <div className="col-md-3 text-center col-12 my-auto">
+                        <div className="col-md-2 text-center col-12 my-auto">
                           <img
                             src={Logo}
                             width="60"
@@ -57,7 +57,7 @@ export const Footer = ({registerEmailUser}) => {
                           <p className="mb-0"><HashLink to="/come-funziona#faq" className="nounderline mr-md-5 text-center">FAQ</HashLink></p>
                         </div>
                         
-                        <div className="col-md-2 col-12 my-auto d-none d-md-block">
+                        <div className="col-md-3 col-12 my-auto d-none d-md-block">
                           <p style={{fontSize:'16px'}}>nucleus.informazioni@gmail.com</p>
                           <p>
                              
