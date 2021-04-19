@@ -121,7 +121,7 @@ const AboutUsPrivate = () => {
                         </Row>
                         <Row>
                             <div className='col-12' style={{fontSize:'28px'}}>
-                                <p>info@nucleusidea.it</p>
+                                <p>nucleus.informazioni@gmail.com</p>
                                 {/* <p>Linkedin:ddddddds</p>                             */}
                             </div>
                         </Row>
@@ -170,7 +170,7 @@ const AboutUsPrivate = () => {
                     <Row>
                     <div className="col-10 col-md-10">
                             <p id="about-faq-question">5. Ho una domanda che non è tra queste, come faccio?</p>
-                            <p id="about-faq-answer">Per qualsiasi altra domanda e curiosità puoi scriverci a info@nucleusidea.it.</p>
+                            <p id="about-faq-answer">Per qualsiasi altra domanda e curiosità puoi scriverci a nucleus.informazioni@gmail.com.</p>
                             <br />
                         </div>
                     </Row>

@@ -27,7 +27,7 @@ export default class Footer extends Component {
                           <p className="mt-2" style={{fontSize:'12px'}}>Copyright © 2021 Nucleus. All rights reserved.</p>
                         </div>
                         <div className="col-md-4 col-12 my-auto d-none d-md-block">
-                          <p style={{fontSize:'16px'}}>info@nucleusidea.it</p>
+                          <p style={{fontSize:'16px'}}>nucleus.informazioni@gmail.com</p>
                         </div>
                     </div>
                 </div>
