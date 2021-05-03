@@ -84,8 +84,6 @@ export const getProfileById  = userId => async dispatch => {
   }
 };
 
-
-// Create or update profile
 export const createProfile = (
   formData,
   history,
@@ -112,8 +110,21 @@ export const createProfile = (
     // dispatch(setAlert(edit ? 'Profile Updated' : 'Profile Created', 'success'));
 
     // if (!edit) {
-      if(id !== undefined){history.push(`/view-call/${id}`)}
-      else {history.push('/dashboard')}
+      console.log('CREATE PROFILE', id)
+     
+      if(id !== undefined)
+      {
+        if(id === 'create-project') {
+          history.push('/create-project')
+        }
+        else {
+          history.push(`/view-call/${id}`)
+        }
+      }
+      else 
+      {
+        history.push('/dashboard')
+      }
     // }
   } catch (err) {
     const errors = err.response.data.errors;

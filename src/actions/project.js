@@ -406,7 +406,7 @@ export const createCallProject = (formData, history, edited = false) => async di
     const config = {
        headers: {'Content-Type' : 'application/json'}
     } 
-    console.log("sent the creation call")    
+    console.log("sent the creation call", formData)    
    try{         
           
        const res = await axios.post(`/api/projects/new-call`, formData, config)

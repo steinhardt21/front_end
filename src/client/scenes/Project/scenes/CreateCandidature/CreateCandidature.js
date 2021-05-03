@@ -263,15 +263,10 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                     </Form.Group> 
                     <Form.Group >
                         <Form.Label>E' richiesta la presenza in città o certa area geografica</Form.Label>
-                        {/* <Form.Control as="select" name="CheckPresence"  required>
-                            <option>No</option>
-                            <option>Si</option>
-                        </Form.Control> */}
                         <InputGroup className="mb-3">
                             <InputGroup.Prepend>
                                  <InputGroup.Checkbox aria-label="Checkbox for following text input" defaultChecked={checkbox} onChange={() => setCheckbox(!checkbox)} />
                             </InputGroup.Prepend>
-                            {/* <Form.Control aria-label="Text input with checkbox" /> */}
                         </InputGroup>
 
                         <br />
@@ -286,29 +281,22 @@ export const CreateCandidature = ({complementaryInfo, history, getAllPositions, 
                                 <div className="col-4 offset-4">
                                     <button   type="submit" onClick={() => setNewCandidacy(false)} className="btn border-white text-white creationProjectButton rounded-pill">Invia</button>
                                 </div>
-
-                                {/* <Link className="btn btn-light my-1" to="/create-candidature">Go Back</Link> */}
                             </div>
                     </Form>
                         <PopupGoDashboard
                         show={modalGoDashboard}
-                        clickMe={() => {   // updateAccepted()
-                                            // setModalShow(false)
+                        clickMe={() => {   
                                             setModalGoDashboard(false)
                                             setModalMessageGoDashboard(true)
-                                                // setModalShowAcceptedCalendark(true)
-                                            // createCandidature(formData)
-                                            // history.push('/create-profile')
                                         }
                                 }
                         onHide={() => setModalGoDashboard(false)}
                     />
                     <PopupMessageGoDashboard
                         show={modalMessageGoDashboard}
-                        clickMe={() => {   // updateAccepted()
+                        clickMe={() => {   
                                             setModalMessage(false)
                                             createCallProject(formData, history)
-
                                             setFormData({
                                                 Position:' ',
                                                 Skills: ' ',

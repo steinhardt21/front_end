@@ -1,22 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { connect } from 'react-redux';
-import { withRouter } from "react-router";
-import { Link } from 'react-router-dom';
-import { getCallInformation, getProjectOwner } from '../../../../../actions/project';
-import { getCurrentProfile } from '../../../../../actions/profile';
-import Head from '../../../../components/Head';
-import Menu from '../../../../components/Menu';
-import Navbar from '../../../../components/Navbar';
-import Spinner from '../../../../../resources/differentResources/Spinner'
+import React, { Fragment, useEffect, useState } from 'react'
+import { Container, Row } from 'react-bootstrap'
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router'
 
-import { Fragment } from 'react';
+import { getCurrentProfile } from '../../../../../actions/profile'
+import { getCallInformation, getProjectOwner } from '../../../../../actions/project'
+import Spinner from '../../../../../resources/differentResources/Spinner'
 import Footer from '../../../../components/Footer'
-import {Tabs,Form, Image, Tab, Button, Container, Row, Col, Card, ListGroup, ListGroupItem} from 'react-bootstrap';
+import Head from '../../../../components/Head'
+import Menu from '../../../../components/Menu'
+import Navbar from '../../../../components/Navbar'
 import Popup from './componets/PopupCheckProfile'
 
 
+
 var questions = {}
-var flag = false;
+var flag = false
 
 
 export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, match, project:{call, loadingCall, owner}, getCurrentProfile, history, profile: {profile}}) => {
@@ -47,7 +46,7 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
         City_Presence_Required
     } = callData
 
-    const [modalShow, setModalShow] = useState(false);
+    const [modalShow, setModalShow] = useState(false)
 
    useEffect(() => {
 
@@ -76,7 +75,7 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
                 City_Presence_Required: 'No'
             })
 
-            flag = true;
+            flag = true
 
             
         }else{
@@ -124,32 +123,32 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
                 <Menu />
             {/** END */}
 
-            <Container fluid id="createProjectBackground">
+            <Container fluid id='createProjectBackground'>
                
                
             {!flag ? <Spinner /> : 
             <Fragment>
                 <Row>
-                    <div className="col-12 col-md-6 offset-md-3">
-                        {/* <h1 className="text-white display-4 text-center">Trova il progetto a cui unirti</h1> */}
+                    <div className='col-12 col-md-6 offset-md-3'>
+                        {/* <h1 className='text-white display-4 text-center'>Trova il progetto a cui unirti</h1> */}
                         <br />
-                        <div id="cardProjectOutside" className="card  shadow-lg p-3 mb-5 bg-white">
+                        <div id='cardProjectOutside' className='card  shadow-lg p-3 mb-5 bg-white'>
                                         
-                            <Row id="cardProjectInside" className="no-gutters text-white mb-3">
-                                <div className="col-md-4 col-12 my-auto text-center">
-                                {/* <img src="image.jpg" className="card-img" alt="..." /> */}
+                            <Row id='cardProjectInside' className='no-gutters text-white mb-3'>
+                                <div className='col-md-4 col-12 my-auto text-center'>
+                                {/* <img src='image.jpg' className='card-img' alt='...' /> */}
                                     <h2>{Name}</h2>
                                 </div>
-                                <div className="col-md-5">
-                                    <div className="card-body p-0">
-                                        {/* <Row className="no-gutters"><div className="col-md-12 col-12 text-center text-md-left"><h2><u>{Position}</u></h2></div></Row> */}
-                                        {( call.Position._id === '6074b0c6e25f3348639fb03a') ? null : <Row className="no-gutters"><div className="col-md-12 col-12 text-center text-md-left"><h2><u>{Position}</u></h2></div></Row>}
-                                        <Row className="card-text no-gutters">
+                                <div className='col-md-5'>
+                                    <div className='card-body p-0'>
+                                        {/* <Row className='no-gutters'><div className='col-md-12 col-12 text-center text-md-left'><h2><u>{Position}</u></h2></div></Row> */}
+                                        {( call.Position._id === '6074b0c6e25f3348639fb03a') ? null : <Row className='no-gutters'><div className='col-md-12 col-12 text-center text-md-left'><h2><u>{Position}</u></h2></div></Row>}
+                                        <Row className='card-text no-gutters'>
                                        
-                                            <div className="col-md-12 col-12 text-center text-md-left">
-                                                <p className="m-0"><span className="font-weight-bold">Settore:</span> {Industry}</p>
-                                                <p className="m-0"><span className="font-weight-bold">Fase:</span> {Development_Stage}</p>
-                                                {/* <p className="m-0"><span className="font-weight-bold">Stato:</span> {call.Project.Status}</p> */}
+                                            <div className='col-md-12 col-12 text-center text-md-left'>
+                                                <p className='m-0'><span className='font-weight-bold'>Settore:</span> {Industry}</p>
+                                                <p className='m-0'><span className='font-weight-bold'>Fase:</span> {Development_Stage}</p>
+                                                {/* <p className='m-0'><span className='font-weight-bold'>Stato:</span> {call.Project.Status}</p> */}
                                             </div>
                                         </Row>
                                         
@@ -161,8 +160,8 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
                             {
 
                                 (questions.length === 0) ? ('') : (
-                                    Object.keys(questions).map((element, index) =>(<Row key={index} className="no-gutters mt-3">
-                                        <div className="col-12">
+                                    Object.keys(questions).map((element, index) =>(<Row key={index} className='no-gutters mt-3'>
+                                        <div className='col-12'>
                                             <p><b>{element}:</b></p>                                                       
                                             <p>{questions[element]}</p>
                                         </div>
@@ -177,11 +176,11 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
                 {
                   (ownerProject === user._id) ? '':
                 
-                (<Row className="pb-5">
-                    <div className="col-12 text-center">
-                        {/* <Link style={{width:'190px'}} type="button" className="btn btn-primary btn-lg" to={`/call/motivational-letter/${match.params.id}`} >Candidati</Link> */}
+                (<Row className='pb-5'>
+                    <div className='col-12 text-center'>
+                        {/* <Link style={{width:'190px'}} type='button' className='btn btn-primary btn-lg' to={`/call/motivational-letter/${match.params.id}`} >Candidati</Link> */}
                             
-                        <button className="btn btn-primary btn-lg" onClick={() => checkProfile()}>Invia candidatura</button>
+                        <button className='btn btn-primary btn-lg' onClick={() => checkProfile()}>Invia candidatura</button>
                                     <Popup
                                         formData = {
                                                  'hello'
@@ -191,7 +190,7 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
                                         clickMe={() => {
                                                             
                                                             // createCandidature(formData)
-                                                            history.push(`/create-profile/${match.params.id}`)
+                                                            history.push(`/create-profile/new-project`)
                                                         }
                                                 }
                                         onHide={() => setModalShow(false)}
