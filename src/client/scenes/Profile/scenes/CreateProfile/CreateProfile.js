@@ -142,7 +142,7 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
                                 <Form.Control name="Email" type="email" value={Email} placeholder="Enter email" onChange={e => onChangeUserData(e)} required />
                                 <br />
                                 <Form.Label className="mr-3 text-white">Data di nascita*  </Form.Label>
-                                {/* <DayPickerInput  
+                                <DayPickerInput  
                                     formatDate={formatDate}
                                     format={FORMAT}
                                     parseDate={parseDate}
@@ -152,7 +152,7 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
                                         month: myDate,
                                       }}
                                       name="Date_Of_Birth"
-                                    onDayChange={e => handleChange(e)} /> */}
+                                    onDayChange={e => handleChange(e)} />
                                 <br />
                                 <br/>
                                 <Form.Label className="text-white">Telefono*</Form.Label>
