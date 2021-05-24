@@ -75,9 +75,17 @@ export const CallProject = ({project}) => {
                                   {(project.Position._id === '6074b0c6e25f3348639fb03a') ? null : <Row className="card-title no-gutters "><h2 className="text-center text-md-left"><u>{project.Position.Position}</u></h2></Row>}
                                 <Row className="card-text no-gutters">
                                     <div className="col-md-12 col-12 text-center text-md-left">
-                                       { (project.Position._id === '6074b0c6e25f3348639fb03a') ? null : <p className="m-0"><span className="font-weight-bold">Figura ricercata: </span> 
+                                       {/* { (project.Position._id === '6074b0c6e25f3348639fb03a') ? null : <p className="m-0"><span className="font-weight-bold">Figura ricercata: </span> 
                                         {project.Position.Position}                                        
-                                        </p>}
+                                        </p>} */}
+                                        
+                                            {
+                                            (project.Skills.join() === '' ? null : <p className="m-0"><span className="font-weight-bold">Competenze richieste:</span> {project.Skills.join()}  </p>
+                                                
+                                            
+                                            )
+                                            }
+                                          
                                         <p className="m-0"><span className="font-weight-bold">Settore: </span> 
                                             {project.Industry}
                                           </p>

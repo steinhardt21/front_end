@@ -25,7 +25,7 @@ export const PopupGoDashboard = (props) => {
                 <Container>
                     <Row>
                         <div className="col-12 text-center">
-                            <p><b>Sei sicuro di voler inviare i dati sulla figura ricercata?</b></p>
+                            <p><b>Step 2: Sei sicuro di voler inviare i dati sulla figura ricercata?</b></p>
                         </div>
                     </Row>
                     <Row>

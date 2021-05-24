@@ -90,7 +90,7 @@ export const DonwnloaDocuments = ({getUsersGeneralData, getCallData, getCandidat
                     <br />
                     <button className="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" 
                             onClick={() => {
-                                console.log('CALL FIRST')
+                                console.log('CALL Sec')
                                 console.log('callsGeneralData', callsGeneralData)
                                 
                                 if(callsGeneralData !== null && callsGeneralData.length != 0) {
@@ -98,9 +98,9 @@ export const DonwnloaDocuments = ({getUsersGeneralData, getCallData, getCandidat
                                     
                                     callsGeneralData.map( (call) => 
                                         {
-                                            secondCSV.push([call._id, call.Date_Inserted, call.Project.Name, call.Founder.Email, call.Project.Description, call.Industry.Industry,
-                                            call.Project.Development_Stage.Development_Stage, call.Position.Position, call.Skills.join(), call.Type_Colaboration,  call.Presence_Required, call.City_Presence_Required,
-                                            call.Status, call.numberCandidatures, call.numberCandidaturesAccepted, call.numberCandidaturesWaiting, call.numberCandidaturesRejected])}
+                                            secondCSV.push([call._id, call.Date_Inserted, call?.Project.Name, call?.Founder.Email, call?.Project.Description, call?.Industry.Industry,
+                                            call?.Project.Development_Stage.Development_Stage, call?.Position.Position, call?.Skills.join(), call?.Type_Colaboration,  call?.Presence_Required, call?.City_Presence_Required,
+                                            call?.Status, call?.numberCandidatures, call?.numberCandidaturesAccepted, call?.numberCandidaturesWaiting, call?.numberCandidaturesRejected])}
                                 
                                 ) 
                                     
@@ -108,7 +108,7 @@ export const DonwnloaDocuments = ({getUsersGeneralData, getCallData, getCandidat
                                 setCallsList(secondCSV) 
 
                                 }
-                                                 
+                                    console.log('end')             
                                 }
                             }
                         >

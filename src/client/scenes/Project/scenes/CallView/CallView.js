@@ -55,8 +55,7 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
 
         if(!loadingCall)
         {
-            console.log(call)
-            console.log(call.Position.Position)
+            console.log('call.ProjectAnalysis', call.ProjectAnalysis)
             
             call.ProjectAnalysis.map((quesAns) => questions[quesAns.Analysis_Question.Question] = quesAns.Answer)
 
@@ -114,7 +113,7 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
             history.push(`/call/motivational-letter/${match.params.id}`)
         }
    }
-
+   console.log(questions)
     return (
         <div key={ match.params.id}>
             {/** START - Definition of the upper part of the page */}
@@ -146,6 +145,7 @@ export const CallView = ({getCallInformation, getProjectOwner, auth:{user}, matc
                                         <Row className='card-text no-gutters'>
                                        
                                             <div className='col-md-12 col-12 text-center text-md-left'>
+                                                <p className='m-0'><span className='font-weight-bold'>Competenze richieste:</span> {call.Skills.join()}</p>
                                                 <p className='m-0'><span className='font-weight-bold'>Settore:</span> {Industry}</p>
                                                 <p className='m-0'><span className='font-weight-bold'>Fase:</span> {Development_Stage}</p>
                                                 {/* <p className='m-0'><span className='font-weight-bold'>Stato:</span> {call.Project.Status}</p> */}

@@ -25,12 +25,13 @@ export const PopupCreateProject = (props) => {
                 <Container>
                     <Row>
                         <div className="col-12 text-center">
-                            <p><b>Sei sicuro di voler procedere e inviare i dati sul tuo progetto?</b></p>
+                            <p><b>Step 1: Sei sicuro di voler procedere e inviare i dati sul tuo progetto?</b></p>
                         </div>
                     </Row>
                     <Row>
-                        <div className="col-12">
+                        <div className="col-12 text-center">
                             <p>Se procedi non sarà più possibile modificare le informazioni inserite.</p>
+                            <p>N.B. Affinché il progetto venga salvato correttamente, occorre completare anche lo Step 2 alla pagina successiva.</p>
                         </div>
                     </Row>
                 </Container>
