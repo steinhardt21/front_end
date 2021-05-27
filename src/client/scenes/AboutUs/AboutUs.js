@@ -128,7 +128,7 @@ const AboutUs = ({auth: {isAuthenticated}}) => {
                         </Row>
                         <Row>
                             <div className='col-12 ' style={{fontSize:'28px'}}>
-                                <p>nucleus.informazioni@gmail.com</p>
+                                <p> info@nucleus.it</p>
                                 {/* <p>Linkedin:ddddddds</p>                             */}
                             </div>
                         </Row>
@@ -177,7 +177,7 @@ const AboutUs = ({auth: {isAuthenticated}}) => {
                 <Row>
                 <div className="col-10 col-md-10">
                         <p id="about-faq-question">5. Ho una domanda che non è tra queste, come faccio?</p>
-                        <p id="about-faq-answer">Per qualsiasi altra domanda e curiosità puoi scriverci a nucleus.informazioni@gmail.com.</p>
+                        <p id="about-faq-answer">Per qualsiasi altra domanda e curiosità puoi scriverci a  info@nucleus.it.</p>
                         <br />
                     </div>
                 </Row>

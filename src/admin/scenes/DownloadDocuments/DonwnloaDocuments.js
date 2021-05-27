@@ -122,12 +122,12 @@ export const DonwnloaDocuments = ({getUsersGeneralData, getCallData, getCandidat
                                 
                         if(candidaturesGeneralData !== null && candidaturesGeneralData.length != 0) {
                             candidaturesGeneralData.map( (candidature) => 
-                                {
+                                {   
                                     thirdCSV.push(
                                         [
                                             candidature._id, 
                                             candidature.Date_Inserted,
-                                            candidature.Motivational_Letter,
+                                            candidature.Motivational_Letter.replace(/['"]+/g, ''),
                                             candidature.Call_Project.Project._id,
                                             candidature.Call_Project.Project.Name,
                                             candidature.Call_Project._id,

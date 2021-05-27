@@ -58,7 +58,7 @@ export const Footer = ({registerEmailUser}) => {
                         </div>
                         
                         <div className="col-md-3 col-12 my-auto d-none d-md-block">
-                          <p style={{fontSize:'16px'}}>nucleus.informazioni@gmail.com</p>
+                          <p style={{fontSize:'16px'}}> info@nucleus.it</p>
                           <p>
                              
                           </p>
