@@ -26,6 +26,7 @@ import ListCandidatesCall from './client/scenes/Candidature/scenes/CandidatesFor
 import UpdateCandidature from './client/scenes/Candidature/scenes/UpdateCandidature/UpdateCandidature'
 import AboutUs from './client/scenes/AboutUs/AboutUs'
 import ListCallPublic from './client/scenes/Landing/ListCallPublic'
+import ResetPassword from './client/scenes/Sign/ResetPassword'
 
 //Redux
 import {Provider} from 'react-redux'
@@ -93,6 +94,7 @@ const App = () =>
                   <PrivateRoute exact path="/list-candidate/call/:id" component={ListCandidatesCall} />
                   <PrivateRoute exact path="/call/update-motivational-letter/:id" component={UpdateCandidature} />
                   <PrivateRoute exact path="/call/come-funziona-privata" component={AboutUsPrivate} />
+                  <Route exact path="/reset-password" component={ResetPassword} />
 
                   <Route exact path="/sign/:id?" component={SignUser} />
                   <Route exact path="/come-funziona" component={AboutUs} />

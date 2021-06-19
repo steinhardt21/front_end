@@ -10,7 +10,8 @@ import {
     LOGIN_SUCCESS,
     LOGOUT,
     USER_UPDATED,
-    USER_ERROR
+    USER_ERROR,
+    RESET_PASSWORD_SUCCESS
 } from './types'
 
 
@@ -45,6 +46,40 @@ export const updateUser = (formData) => async dispatch => {
 
         dispatch({type: USER_ERROR,
         payload:{msg: err.response.statusText, status: err.response.status}})
+    }
+}
+
+export const resetPassword = (data) => async dispatch => {
+    console.log('ciao')
+    const config = {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }
+    
+    // const body = JSON.stringify({email, password})
+
+    console.log('data', data)
+
+    try { 
+        const res = await axios.post('/api/auth/reset-password', data, config)
+    
+        dispatch({
+            type: RESET_PASSWORD_SUCCESS,
+            payload: res.data
+        })
+        
+    }catch(err) {
+
+        // const errors = err.response.data.errors;
+        console.log(err)
+        // if(errors){
+        //     errors.forEach(error => dispatch(setAlert(error.msg, 'danger')))
+        // }
+
+        dispatch({
+            type: LOGIN_FAIL
+        })
     }
 }
 
