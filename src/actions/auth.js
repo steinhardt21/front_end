@@ -49,7 +49,7 @@ export const updateUser = (formData) => async dispatch => {
     }
 }
 
-export const resetPassword = (data) => async dispatch => {
+export const resetPassword = (data, history) => async dispatch => {
     console.log('ciao')
     const config = {
         headers: {
@@ -68,6 +68,8 @@ export const resetPassword = (data) => async dispatch => {
             type: RESET_PASSWORD_SUCCESS,
             payload: res.data
         })
+
+        history.push(`/reset-password-conferma`)
         
     }catch(err) {
 

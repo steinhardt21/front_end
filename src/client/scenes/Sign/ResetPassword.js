@@ -6,8 +6,9 @@ import Footer from '../../components/FooterPublic';
 import Head from '../../components/Head';
 import NavbarPublic from '../../components/NavbarPublic';
 
+import {Redirect} from 'react-router-dom' 
 
-export const ResetPassword = ({resetPassword}) => {
+export const ResetPassword = ({resetPassword, history}) => {
 
     const [formData, setFormData] = useState({
         Email: '',
@@ -30,7 +31,7 @@ export const ResetPassword = ({resetPassword}) => {
         else {
             setMatchPassword(true)
             console.log('formData:  ', formData)
-            resetPassword(formData)
+            resetPassword(formData, history)
         }
       };
 
