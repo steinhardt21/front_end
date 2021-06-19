@@ -6,6 +6,7 @@ import Footer from '../../components/FooterPublic';
 import Head from '../../components/Head';
 import NavbarPublic from '../../components/NavbarPublic';
 
+
 export const ResetPassword = ({resetPassword}) => {
 
     const [formData, setFormData] = useState({
