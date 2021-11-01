@@ -27,7 +27,6 @@ store.subscribe(() => {
   currentState = store.getState();
 
   //USER
-
   // if the token changes set the value in localStorage and axios headers
   if (previousState.auth.token !== currentState.auth.token) {
     const token = currentState.auth.token;
@@ -35,14 +34,11 @@ store.subscribe(() => {
   }
 
   //ADMIN
-  
   // if the token changes set the value in localStorage and axios headers
   if (previousState.authCollaborator.token !== currentState.authCollaborator.token) {
     const token = currentState.authCollaborator.token;
     setAuthToken(token);
   }
-
-
 });
 
 export default store

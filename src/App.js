@@ -123,10 +123,7 @@ const App = () =>
                         <AdminRoute exact path="/admin/project/acceptance/:id" component={ProjectDetailApprovation} />
                         <AdminRoute exact path="/admin/download-documents" component={DownloadDocuments} />
                       {/**Management projects */}
-
                 {/* Admin section */}
-
-
                 {/* Not found - 404 */}
                 <Route component={NotFound} />
 
