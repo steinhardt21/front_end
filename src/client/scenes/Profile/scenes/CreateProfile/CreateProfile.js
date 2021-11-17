@@ -50,14 +50,14 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
 
     const onChange = e => setProfileFormData({...profileFormData, [e.target.name]: e.target.value});
     const onChangeUserData = e => setUserFormData({...userFormData,[e.target.name]: e.target.value});
-    const onChangeDate = date => { 
-                                setStartDate(date);
-                                profileFormData.Date_Of_Birth = date;
-    }
+    // const onChangeDate = date => { 
+    //                             setStartDate(date);
+    //                             profileFormData.Date_Of_Birth = date;
+    // }
 
     const onSubmit = e => {
         e.preventDefault();
-        profileFormData.Date_Of_Birth = myDate;  
+        // profileFormData.Date_Of_Birth = myDate;  
         
         console.log(profileFormData)
 
@@ -92,12 +92,13 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
             Position: (profile === null) ? '' : (loading || (profile.Position === null) ? '' : (profile.Position._id)),
             Industry: (industries === null) ? '' : (loadingIndustries || (industries === null) ? '' : (industries.Industry._id)),
             Skills: (profile === null) ? '' : (loading || (profile.Skills === null) ? '' : (profile.Skills.join())),
-            Telephone: (profile === null) ? '' : (loading || !profile.Telephone ? '' : profile.Telephone)              
+            Telephone: (profile === null) ? '' : (loading || !profile.Telephone ? '' : profile.Telephone) ,             
+            Birthday: (profile === null) ? '' : (loading || !profile.Birthday ? '' : profile.Birthday)              
         })
 
-        if((profile !== null)&&(!loading)&&(profile.Date_Of_Birth)){
-             setMyDate(new Date((moment(profile.Date_Of_Birth)).format('d/MM/yyyy'))) 
-            console.log('birth',new Date((moment(profile.Date_Of_Birth)).format('d/MM/yyyy')))}
+        // if((profile !== null)&&(!loading)&&(profile.Date_Of_Birth)){
+        //      setMyDate(new Date((moment(profile.Date_Of_Birth)).format('d/MM/yyyy'))) 
+        //     console.log('birth',new Date((moment(profile.Date_Of_Birth)).format('d/MM/yyyy')))}
 
     },[getAllPositions, getAllIndustries, getCurrentProfile,getProfileIndustries, loading, loadingIndustries])
 
@@ -108,7 +109,7 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
     })
 
     const [profileFormData, setProfileFormData] = useState({
-        Date_Of_Birth: '',
+        Birthday: '',
         City_Living: '',
         Biography:'',
         Position: '',
@@ -118,7 +119,7 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
     })
 
     const {Name, Surname, Email} = userFormData;
-    const {Date_Of_Birth, City_Living, Biography, Position, Industry, Skills, Telephone} = profileFormData;
+    const {Birthday, City_Living, Biography, Position, Industry, Skills, Telephone} = profileFormData;
     const FORMAT = 'dd/MM/yyyy';
 
     return (
@@ -142,7 +143,9 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
                                 <Form.Control name="Email" type="email" value={Email} placeholder="Enter email" onChange={e => onChangeUserData(e)} required />
                                 <br />
                                 <Form.Label className="mr-3 text-white">Data di nascita*  </Form.Label>
-                                <DayPickerInput  
+                                <Form.Control name="Birthday" type="text" value={Birthday} placeholder="Esempio 10/10/1990" onChange={e =>  onChange(e)} required /> 
+
+                                {/* <DayPickerInput  
                                     formatDate={formatDate}
                                     format={FORMAT}
                                     parseDate={parseDate}
@@ -152,7 +155,7 @@ export const CreateProfile = ({createProfile, history, auth:{user}, getCurrentPr
                                         month: myDate,
                                       }}
                                       name="Date_Of_Birth"
-                                    onDayChange={e => handleChange(e)} />
+                                    onDayChange={e => handleChange(e)} /> */}
                                 <br />
                                 <br/>
                                 <Form.Label className="text-white">Telefono*</Form.Label>
