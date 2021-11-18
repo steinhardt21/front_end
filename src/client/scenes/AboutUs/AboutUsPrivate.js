@@ -32,7 +32,7 @@ const AboutUsPrivate = () => {
                 <Row>
                     <div className="col-md-3 offset-md-2 col-10 offset-1 shadow" id='containerFormCreateProject'>
                         <Row>
-                            <div className="col-10 offset-1 col-md-12 offset-md-0 p-0"> <Image src={Image_1} width="100%" height='290px' style={{ borderRadius: '10%' }} /></div>
+                            <div style={{overflow: "hidden", borderRadius: "36px"}} className="col-10 offset-1 col-md-12 offset-md-0 p-0"> <Image src={Image_1} width="100%" height='290px' style={{ borderRadius: '10%' }} /></div>
                         </Row>
                         <Row className="pt-5">
                             <div className="col-12 text-center text-white p-0"><p id="about-text-card-first" >Founder o aspiranti tali che cercano co-founder o team member</p></div>
@@ -50,7 +50,7 @@ const AboutUsPrivate = () => {
                     </div>
                     <div className="col-md-3 offset-md-2 col-10 offset-1 shadow" id='containerFormCreateProject'>
                         <Row>
-                            <div className="col-10 offset-1 col-md-12 offset-md-0 p-0"> <Image src={Image_2} width="100%" height='290px' style={{ borderRadius: '10%' }} /></div>
+                            <div style={{overflow: "hidden", borderRadius: "36px"}} className="col-10 offset-1 col-md-12 offset-md-0 p-0"> <Image src={Image_2} width="100%" height='290px' style={{ borderRadius: '10%' }} /></div>
                         </Row>
                         <Row className="pt-5">
                             <div className="col-12 text-center text-white p-0"><p id="about-text-card-first">Professionisti che vogliono contribuire alla nascita di una startup</p></div>
